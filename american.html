@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Sign Language Translator</title>
+    <link rel="stylesheet" href="css/american.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>American Sign Language Translator</h1>
+        <div class="navbar">
+            <a href="#alphabet">Alphabet</a>
+            <div class="subnav">
+                <a class="subnavbtn">Transport</a>
+                <div class="subnav-content">
+                    <a href="#bus">Bus</a>
+                    <a href="#train">Train</a>
+                    <a href="#car">Car</a>
+                    <a href="#bicycle">Bicycle</a>
+                    <a href="#boat">Boat</a>
+                </div>
+            </div>
+            <a href="#days">Days</a>
+            <a href="#months">Months</a>
+            <a href="#counting">Counting</a>
+            <a href="index.html">Translator</a>
+        </div>
+        
+        <div id="translator">
+            <p>Bridging Communication, Empowering Connection.</p> 
+            <p>Our goal is to make sign language education accessible, empowering individuals to communicate effectively and inclusively with the deaf and hard-of-hearing community.</p>
+            <div id="video-container">
+                <img id="image-placeholder" src="images/hand.jpg" alt="Sign Language" />
+                <video id="video-player" controls>
+                    <source id="video-source" src="Videos" type="video/mp4"> <!-- Default video -->
+                </video>
+                <div class="video-list">
+                    <button class="collapsible">Video Titles</button>
+
+                    <div class="content">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas-blue" style="position: fixed; top: 0; left: 0; z-index: -2; width: 100%;;"></canvas>
+
+    <script src="js/canvas.js"></script>
+    <script src="js/american.js"></script>
+</body>
+</html>

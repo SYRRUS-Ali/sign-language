@@ -1,0 +1,220 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #deffe2;
+    color: #444;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #008516;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  #sign-language-text {
+    text-align: center;
+  }
+  
+  #sign-language-text p {
+    font-size: 1.2rem;
+    color: #000000;
+    padding: 10px;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(8, 125, 8, 0.9);
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  
+  .navbar a,
+  .subnavbtn {
+    color: #ffffff;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar a:hover,
+  .subnavbtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(11, 149, 11);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 180px;
+    overflow: hidden;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  
+  .subnav-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .subnav-content a:hover {
+      background-color: rgb(30, 113, 30);
+  }
+  
+  #main-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 2rem;
+    animation: fadeIn 1.2s ease-out;
+  }
+  
+  #video-container {
+    margin-top: 20px;
+    padding: 1rem;
+    flex-grow: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  #image-placeholder {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  #video-player {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  .video-list {
+    margin-top: 20px;
+    margin: 12px;
+  }
+  
+  .video-item {
+    background: #f8f9fc;
+    padding: 15px;
+    margin: 12px;
+    border: 1px solid #d1d9e6;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .video-item:hover {
+    background: #e6f9e8;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  .collapsible {
+    background-color: #1eb200;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 15px;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    margin: 10px 0;
+    transition: background 0.3s ease, transform 0.2s;
+  }
+  
+  .collapsible:hover,
+  .collapsible.active {
+    background: #0d8500;
+    cursor: pointer;
+  }
+  
+  .content {
+    display: none;
+    background: #f1fcf1;
+    border: 1px solid #d3e6d1;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 1000px) {
+      .navbar {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      .navbar a,
+      .subnavbtn {
+        padding: 10px 12px;
+      }
+  
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    .navbar a,
+    .subnavbtn {
+      padding: 10px 12px;
+    }
+    .video-item {
+      font-size: 0.8rem;
+  }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    .navbar a,
+    .subnavbtn {
+      font-size: 0.7rem;
+    }
+  }
+  

@@ -1,0 +1,314 @@
+[
+  {
+    "id": "university",
+    "word": {
+      "Russian": "университет",
+      "English": "university",
+      "Bengali": "বিশ্ববিদ্যালয়"
+    }
+  },
+  {
+    "id": "school",
+    "word": {
+      "Russian": "школа",
+      "English": "school",
+      "Bengali": "স্কুল"
+    }
+  },
+  {
+    "id": "office",
+    "word": {
+      "Russian": "офис",
+      "English": "office",
+      "Bengali": "অফিস"
+    }
+  },
+  {
+    "id": "college",
+    "word": {
+      "Russian": "колледж",
+      "English": "college",
+      "Bengali": "কলেজ"
+    }
+  },
+  {
+    "id": "bread",
+    "word": {
+      "Russian": "хлеб",
+      "English": "bread",
+      "Bengali": "রুটি"
+    }
+  },
+  {
+    "id": "food",
+    "word": {
+      "Russian": "еда",
+      "English": "food",
+      "Bengali": "খাদ্য"
+    }
+  },
+  {
+    "id": "grape",
+    "word": {
+      "Russian": "виноград",
+      "English": "grape",
+      "Bengali": "আঙ্গুর"
+    }
+  },
+  {
+    "id": "jackfruit",
+    "word": {
+      "Russian": "джекфрут",
+      "English": "jackfruit",
+      "Bengali": "কাঁঠাল"
+    }
+  },
+  {
+    "id": "milk",
+    "word": {
+      "Russian": "молоко",
+      "English": "milk",
+      "Bengali": "দুধ"
+    }
+  },
+  {
+    "id": "papaya",
+    "word": {
+      "Russian": "папайя",
+      "English": "papaya",
+      "Bengali": "পেঁপে"
+    }
+  },
+  {
+    "id": "rice",
+    "word": {
+      "Russian": "рис",
+      "English": "rice",
+      "Bengali": "চাল"
+    }
+  },
+  {
+    "id": "sweet",
+    "word": {
+      "Russian": "сладкий",
+      "English": "sweet",
+      "Bengali": "মিষ্টি"
+    }
+  },
+  {
+    "id": "apple",
+    "word": {
+      "Russian": "яблоко",
+      "English": "apple",
+      "Bengali": "আপেল"
+    }
+  },
+  {
+    "id": "banana",
+    "word": {
+      "Russian": "банан",
+      "English": "banana",
+      "Bengali": "কলা"
+    }
+  },
+  {
+    "id": "chicken",
+    "word": {
+      "Russian": "курица",
+      "English": "chicken",
+      "Bengali": "মুরগি"
+    }
+  },
+  {
+    "id": "coffee",
+    "word": {
+      "Russian": "кофе",
+      "English": "coffee",
+      "Bengali": "কফি"
+    }
+  },
+  {
+    "id": "dal",
+    "word": {
+      "Russian": "дал",
+      "English": "dal",
+      "Bengali": "ডাল"
+    }
+  },
+  {
+    "id": "fish",
+    "word": {
+      "Russian": "рыба",
+      "English": "fish",
+      "Bengali": "মাছ"
+    }
+  },
+  {
+    "id": "mango",
+    "word": {
+      "Russian": "манго",
+      "English": "mango",
+      "Bengali": "আম"
+    }
+  },
+  {
+    "id": "meat",
+    "word": {
+      "Russian": "мясо",
+      "English": "meat",
+      "Bengali": "মাংস"
+    }
+  },
+  {
+    "id": "orange",
+    "word": {
+      "Russian": "апельсин",
+      "English": "orange",
+      "Bengali": "কমলা"
+    }
+  },
+  {
+    "id": "tea",
+    "word": {
+      "Russian": "чай",
+      "English": "tea",
+      "Bengali": "চা"
+    }
+  },
+  {
+    "id": "vegetable",
+    "word": {
+      "Russian": "овощ",
+      "English": "vegetable",
+      "Bengali": "সবজি"
+    }
+  },
+  {
+    "id": "water",
+    "word": {
+      "Russian": "вода",
+      "English": "water",
+      "Bengali": "জল"
+    }
+  },
+  {
+    "id": "to stroll",
+    "word": {
+      "Russian": "Бродить",
+      "English": "to stroll",
+      "Bengali": "ঘোরাঘুরি"
+    }
+  },
+  {
+    "id": "to boil food",
+    "word": {
+      "Russian": "Варить",
+      "English": "to boil food",
+      "Bengali": "ফোঁড়া"
+    }
+  },
+  {
+    "id": "to guide",
+    "word": {
+      "Russian": "Вести",
+      "English": "to guide",
+      "Bengali": "খবর"
+    }
+  },
+  {
+    "id": "to conduct",
+    "word": {
+      "Russian": "Дирижировать",
+      "English": "to conduct",
+      "Bengali": "আচার"
+    }
+  },
+  {
+    "id": "to add",
+    "word": {
+      "Russian": "Добавить",
+      "English": "to add",
+      "Bengali": "যোগ করুন"
+    }
+  },
+  {
+    "id": "to fry",
+    "word": {
+      "Russian": "Жарить",
+      "English": "to fry",
+      "Bengali": "ভাজা"
+    }
+  },
+  {
+    "id": "to close",
+    "word": {
+      "Russian": "Закрыть",
+      "English": "to close",
+      "Bengali": "বন্ধ"
+    }
+  },
+  {
+    "id": "to acquaint or to introduce",
+    "word": {
+      "Russian": "Знакомить",
+      "English": "to acquaint or to introduce",
+      "Bengali": "দেখা"
+    }
+  },
+  {
+    "id": "to know",
+    "word": {
+      "Russian": "Знать",
+      "English": "to know",
+      "Bengali": "জানি"
+    }
+  },
+  {
+    "id": "to go or to walk",
+    "word": {
+      "Russian": "Идти",
+      "English": "to go or to walk",
+      "Bengali": "যাও"
+    }
+  },
+  {
+    "id": "year",
+    "word": {
+      "Russian": "год",
+      "English": "year",
+      "Bengali": "বছর"
+    }
+  },
+  {
+    "id": "day",
+    "word": {
+      "Russian": "день",
+      "English": "day",
+      "Bengali": "দিন"
+    }
+  },
+  {
+    "id": "month",
+    "word": {
+      "Russian": "месяц",
+      "English": "month",
+      "Bengali": "মাস"
+    }
+  },
+  {
+    "id": "week",
+    "word": {
+      "Russian": "неделя",
+      "English": "week",
+      "Bengali": "সপ্তাহ"
+    }
+  },
+  {
+    "id": "English_Alphabet",
+    "word": {
+      "Russian": "английский алфавит",
+      "English": "English Alphabet",
+      "Bengali": "ইংরেজি বর্ণমালা"
+    }
+  }
+]

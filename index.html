@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Language Translator</title>
+    <link rel="stylesheet" href="css/translate.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Language Translator</h1>
+      <nav>
+        <a href="american.html">American Sign Language</a>
+        <a href="russian.html">Russian Sign Language</a>
+        <a href="bengali.html">Bengali Sign Language</a>
+      </nav>
+
+      <form id="translateForm" class="forms">
+        <label for="sourceLanguage">Translate From:</label>
+        <select id="sourceLanguage" name="sourceLanguage">
+          <option value="Russian">Russian</option>
+          <option value="English">English</option>
+          <option value="Bengali">Bengali</option>
+        </select>
+      
+        <label for="word">Word to Translate:</label>
+        <input type="text" id="word" name="word" placeholder="Enter a word" required />
+      
+        <label for="signLang">Translate To:</label>
+        <select id="signLang" name="signLang">
+          <option value="AmericanSignLang">American Sign Language</option>
+          <option value="RussianSignLang">Russian Sign Language</option>
+          <option value="BengaliSignLang">Bengali Sign Language</option>
+        </select>
+      
+        <button type="button" id="translateBtn">Translate</button>
+      </form>
+      <div id="result">
+        <h2>Translation Video</h2>
+        <video id="translatedVideo" controls></video>
+      </div>
+
+      <form id="feedbackForm" method="POST" action="save_feedback.php">
+        <h3>Feedback</h3>
+        <i>How would you rate your experience?</i>
+        <div class="star-rating raiting">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" class="star">&#9733;</label>
+            
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" class="star">&#9733;</label>
+            
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" class="star">&#9733;</label>
+            
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" class="star">&#9733;</label>
+            
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" class="star">&#9733;</label>
+        </div>
+        
+        <label for="comments">Add comment:</label>
+        <textarea id="comments" name="comments" placeholder="Share your experience with others"></textarea>
+        
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <canvas id="canvas-dark" style="position: fixed; top: 0; left: 0; z-index: -2; width: 100%;;"></canvas>
+
+      <script src="js/canvas.js"></script>
+    <script src="js/translate.js"></script>
+  </body>
+</html>
