@@ -90,8 +90,8 @@ body {
     background: #ffffff;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding: 25px;
-    margin: 2rem;
+    padding: 2rem;
+    margin: 2rem 0.2rem;
     animation: fadeIn 1.2s ease-out;
   }
   
@@ -184,37 +184,37 @@ body {
   }
   
   @media (max-width: 1000px) {
-      .navbar {
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-      .navbar a,
-      .subnavbtn {
-        padding: 10px 12px;
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
       }
-  
-  }
-  
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2rem;
-    }
     .navbar a,
     .subnavbtn {
-      padding: 10px 12px;
+      padding: 1rem 3rem;
     }
-    .video-item {
-      font-size: 0.8rem;
+}
+
+@media (max-width: 800px){
+  #main-container {
+    width: 100%;
   }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
   }
-  
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 1.5rem;
-    }
-    .navbar a,
-    .subnavbtn {
-      font-size: 0.7rem;
-    }
+  .video-item {
+    font-size: 0.8rem;
+}
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
   }
-  
+  .navbar a,
+  .subnavbtn {
+    font-size: 0.9rem;
+  }
+}
