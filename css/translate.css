@@ -14,7 +14,7 @@ body {
 .container {
   width: 80%;
   margin: 3rem auto;
-  padding: 20px;
+  padding: 2rem auto;
   background-color: #1e293b;
   border-radius: 1.5rem;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
@@ -291,20 +291,16 @@ textarea::placeholder {
 
 footer {
   display: block;
+  width: 100%;
   color: white;
   background-color: #1e293b;
-  padding: 2rem 1rem;
+  padding: 2rem auto  ;
   text-align: center;
   }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .footer-title {
   font-size: 24px;
-  margin-bottom: 20px;
+  padding: 2rem;
   font-weight: bold;
 }
 
@@ -352,6 +348,7 @@ footer {
 .footer-note {
   font-size: 14px;
   color: #aaa;
+  padding-bottom: 0.5rem ;
 }
 
 .footer-note a {
@@ -398,10 +395,6 @@ footer {
     width: 97%;
   }
 
-  footer {
-    width: 100%;
-  }
-  
   .team-members {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
