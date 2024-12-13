@@ -71,6 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
             videoListContainer.style.display = "none";
 
             switch(target) {
+                case "translator":
+                    window.location.href = "index.html";
+                    break;
                 case "alphabet":
                     createVideoList({
                         "English Alphabet": videos["English Alphabet"],
@@ -113,6 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 case "months":
                     createVideoList({ "Month": videos["Month"] });
                     break;
+                    
                 default:
                     console.log("Unknown section: " + target);
                     break;
