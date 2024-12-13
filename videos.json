@@ -192,7 +192,7 @@
     }
   },
   {
-    "id": "to stroll",
+    "id": "stroll",
     "word": {
       "Russian": "Бродить",
       "English": "to stroll",
@@ -200,7 +200,7 @@
     }
   },
   {
-    "id": "to boil food",
+    "id": "boil_food",
     "word": {
       "Russian": "Варить",
       "English": "to boil food",
@@ -208,7 +208,7 @@
     }
   },
   {
-    "id": "to guide",
+    "id": "guide",
     "word": {
       "Russian": "Вести",
       "English": "to guide",
@@ -216,7 +216,7 @@
     }
   },
   {
-    "id": "to conduct",
+    "id": "conduct",
     "word": {
       "Russian": "Дирижировать",
       "English": "to conduct",
@@ -224,7 +224,7 @@
     }
   },
   {
-    "id": "to add",
+    "id": "add",
     "word": {
       "Russian": "Добавить",
       "English": "to add",
@@ -232,7 +232,7 @@
     }
   },
   {
-    "id": "to fry",
+    "id": "fry",
     "word": {
       "Russian": "Жарить",
       "English": "to fry",
@@ -240,7 +240,7 @@
     }
   },
   {
-    "id": "to close",
+    "id": "close",
     "word": {
       "Russian": "Закрыть",
       "English": "to close",
@@ -248,7 +248,7 @@
     }
   },
   {
-    "id": "to acquaint or to introduce",
+    "id": "acquaint",
     "word": {
       "Russian": "Знакомить",
       "English": "to acquaint or to introduce",
@@ -256,7 +256,7 @@
     }
   },
   {
-    "id": "to know",
+    "id": "know",
     "word": {
       "Russian": "Знать",
       "English": "to know",
@@ -264,10 +264,10 @@
     }
   },
   {
-    "id": "to go or to walk",
+    "id": "go",
     "word": {
       "Russian": "Идти",
-      "English": "to go or to walk",
+      "English": "to go",
       "Bengali": "যাও"
     }
   },
