@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
             videoListContainer.style.display = "none";
 
             switch(target) {
+                case "translator":
+                    window.location.href = "index.html";
+                    break;
                 case "verb":
                     createVideoList({
                         "Stroll - Бродить": videos["Stroll - Бродить"],
