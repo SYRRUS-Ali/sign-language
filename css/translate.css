@@ -407,15 +407,3 @@ footer {
     height: 100px;
   }
 }
-
-@media (max-width: 600px){
-  .container {
-    width: 500px;
-  }
-
-}
-@media (max-width: 400px){
-  .container {
-    width: 300px;
-  }
-}
