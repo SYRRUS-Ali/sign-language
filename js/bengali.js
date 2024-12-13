@@ -64,6 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
             videoListContainer.style.display = "none";
 
             switch(target) {
+                case "translator":
+                    window.location.href = "index.html";
+                    break;
                 default:
                     console.log("Unknown section: " + target);
                     break;
