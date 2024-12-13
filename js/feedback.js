@@ -1,33 +1,37 @@
-document.getElementById('saveFeedback').addEventListener('click', async () => {
-    const rating = document.querySelector('input[name="rating"]:checked')?.value || "No rating given";
-    const comments = document.getElementById('comments').value;
-    const time = new Date().toISOString();
+document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default form submission
 
-    const feedback = {
-      time,
-      rating,
-      comments,
-    };
+    const rating = document.querySelector('input[name="rating"]:checked');
+    const ratingValue = rating ? rating.value : null;
+    const comments = document.getElementById('comments').value.trim();
 
-    const feedbackJson = JSON.stringify(feedback, null, 2);
-
-    try {
-      const handle = await window.showSaveFilePicker({
-        suggestedName: "feedback.json",
-        types: [
-          {
-            description: "JSON Files",
-            accept: { "application/json": [".json"] },
-          },
-        ],
-      });
-
-      const writable = await handle.createWritable();
-      await writable.write(feedbackJson);
-      await writable.close();
-
-      alert("Feedback saved successfully!");
-    } catch (error) {
-      console.error("Error saving file:", error);
+    // Validate the feedback
+    if (!ratingValue) {
+        alert('Please provide a rating.');
+        return;
     }
-  });
+
+    // Prepare data for submission
+    const formData = new FormData();
+    formData.append('rating', ratingValue);
+    formData.append('comments', comments);
+
+    // Submit feedback via AJAX
+    fetch('feedback_handler.php', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            document.getElementById('responseMessage').textContent = 'Thank you for your feedback!';
+            document.getElementById('feedbackForm').reset(); // Reset form after successful submission
+        } else {
+            document.getElementById('responseMessage').textContent = 'Error: ' + data.message;
+        }
+    })
+    .catch(error => {
+        console.error('Error submitting feedback:', error);
+        document.getElementById('responseMessage').textContent = 'An error occurred. Please try again later.';
+    });
+});
