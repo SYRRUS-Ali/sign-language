@@ -73,11 +73,9 @@ nav a:hover {
   color: #38bdf8;
   background: #1e293b;
   box-shadow: 0 4px 10px rgba(56, 189, 248, 0.3);
-  transform: translateY(-3px);
 }
 
 nav a:active {
-  transform: translateY(1px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -323,6 +321,7 @@ textarea::placeholder {
     width: 97%;
   }
 }
+
 @media (max-width: 600px){
   .container {
     width: 500px;
