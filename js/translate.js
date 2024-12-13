@@ -1,6 +1,6 @@
 document.getElementById("translateBtn").addEventListener("click", function () {
   const sourceLanguage = document.getElementById("sourceLanguage").value;
-  const word = document.getElementById("word").value.trim();
+  const word = document.getElementById("word").value.trim().toLowerCase();
   const signLang = document.getElementById("signLang").value;
 
   if (!sourceLanguage || !signLang) {
@@ -15,11 +15,10 @@ document.getElementById("translateBtn").addEventListener("click", function () {
 
   const videoElement = document.getElementById("translatedVideo");
 
-
   fetch("videos.json")
     .then((response) => response.json())
     .then((data) => {
-      const entry = data.find((item) => item.word[sourceLanguage] === word);
+      const entry = data.find((item) => item.word[sourceLanguage]?.toLowerCase() === word);
 
       if (!entry) {
         alert("No translation available for this word.");
