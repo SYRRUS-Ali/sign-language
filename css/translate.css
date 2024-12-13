@@ -398,6 +398,10 @@ footer {
     width: 97%;
   }
 
+  footer {
+    width: 100%;
+  }
+  
   .team-members {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
