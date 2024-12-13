@@ -14,7 +14,7 @@ body {
 .container {
   width: 80%;
   margin: 3rem auto;
-  padding: 2rem auto;
+  padding: 2rem;
   background-color: #1e293b;
   border-radius: 1.5rem;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
@@ -299,6 +299,7 @@ footer {
   }
 
 .footer-title {
+  padding: 2rem;
   font-size: 24px;
   padding: 2rem;
   font-weight: bold;
@@ -385,6 +386,12 @@ footer {
   .container {
     width: 100%;
   }
+
+  footer {
+    width: 100%;
+    padding: 2rem;
+  }
+
   nav {
     flex-direction: column;
     gap: 10px;
