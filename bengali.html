@@ -5,71 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bengali.css" />
-    <title>Bengali Sign Language Translator</title>
+    <title>বাংলা সাইন ল্যাঙ্গুয়েজ অনুবাদক</title>
   </head>
 
   <body>
     <div id="main-container">
-      <h1>Bengali Sign Language Translator</h1>
+      <h1>বাংলা সাইন ল্যাঙ্গুয়েজ অনুবাদক</h1>
       <div class="navbar">
-        <a href="#alphabet">Alphabet</a>
+        <a href="#alphabet">বর্ণমালা</a>
         <div class="subnav">
-          <a class="subnavbtn">Transport</a>
+          <a class="subnavbtn">পরিবহন</a>
           <div class="subnav-content">
-            <a href="#bus">Bus</a>
-            <a href="#train">Train</a>
-            <a href="#car">Car</a>
-            <a href="#bicycle">Bicycle</a>
-            <a href="#boat">Boat</a>
+            <a href="#bus">বাস</a>
+            <a href="#train">ট্রেন</a>
+            <a href="#car">গাড়ি</a>
+            <a href="#bicycle">সাইকেল</a>
+            <a href="#boat">নৌকা</a>
           </div>
         </div>
-        <a href="#days">Days</a>
-        <a href="#months">Months</a>
-        <a href="#counting">Counting</a>
-        <a href="#translator">Translator</a>
+        <a href="#days">দিন</a>
+        <a href="#months">মাস</a>
+        <a href="#counting">গণনা</a>
+        <a href="#translator">অনুবাদক</a>
       </div>
       
       <div id="translator">
-          <p>Sign language is a silent symphony, where every gesture is a note,
-            every movement a melody, weaving stories that touch the soul without
-            a single sound.</p>
+          <p>ইশারা ভাষা হলো একটি নীরব সিম্ফনি, যেখানে প্রতিটি অঙ্গভঙ্গি একটা স্বর, প্রতিটি নড়াচড়া একটা সুর, এমন গল্পের বুনন যা কোন শব্দ ছাড়াই আত্মাকে স্পর্শ করে।.</p>
           <div id="video-container">
             <img id="image-placeholder" src="images/handb.jpg" alt="Sign Language" />
             <video id="video-player" controls>
-                <source id="video-source" src="Videos" type="video/mp4"> <!-- Default video -->
+                <source id="video-source" src="Videos" type="video/mp4">
             </video>
             <div class="video-list">
-                <button class="collapsible">Video Titles</button>
-
+                <button class="collapsible">ভিডিও শিরোনাম</button>
                 <div class="content">
                 </div>
-
             </div>
         </div>
     </div>
 </div>
 <footer>
   <div class="footer-container">
-    <p class="footer-title">Meet Our Team</p>
+    <p class="footer-title">আমাদের দলের সাথে দেখা করুন</p>
     <div class="team-members">
       <div class="team-member">
         <img class="avatar" src="images/avatar/mehrez.jpg" alt="Team Member 2" />
-        <p class="name">Mohammad Mehrez</p>
+        <p class="name">মোহাম্মদ মেহরেজ</p>
       </div>
       <div class="team-member">
         <img class="avatar" src="images/avatar/makhmud.jpg" alt="Team Member 1" />
-        <p class="name">Ali Makhmud</p>
+        <p class="name">আলী মাখমুদ</p>
       </div>
       <div class="team-member">
         <img class="avatar" src="images/avatar/doan.jpg" alt="Team Member 3" />
-        <p class="name">Tien Lap Doan</p>
+        <p class="name">তিয়েন ল্যাপ ডোয়ান</p>
       </div>
       <div class="team-member">
         <img class="avatar" src="images/avatar/chung.jpg" alt="Team Member 3" />
-        <p class="name">Huynh Diem Chung</p>
+        <p class="name">হুইন দিম চুং</p>
       </div>
     </div>
-    <p class="footer-note">© 2024 Sign Language Translator. All rights reserved.</p>
+    <p class="footer-note">এই প্রকল্পটি ভি.ই. ফোরটভের অনুদানের অধীনে <a href="https://mospolytech.ru">মস্কো পলিটেকনিক বিশ্ববিদ্যালয় </a> দ্বারা সমর্থিত 'ব্যবহারকারী-বান্ধব বহুভাষিক সাংকেতিক ভাষা অভিধানের মাধ্যমে যোগাযোগের ক্ষমতায়ন' শীর্ষক গবেষণার একটি অংশ।</p>
   </div>
 </footer>
 <canvas id="canvas-green" style="position: fixed; top: 0; left: 0; z-index: -2; width: 100%;;"></canvas>
