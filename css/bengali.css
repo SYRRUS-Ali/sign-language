@@ -48,3 +48,7 @@ body {
 .avatar:hover {
   filter: drop-shadow(0 0 2rem rgba(41, 155, 56, 0.7));
 }
+
+.footer-note a {
+  color: #56ff53;
+}
