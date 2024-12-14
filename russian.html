@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Russian Sign Language Translator</title>
+    <title>Переводчик русского языка жестов</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/russian.css">
 </head>
 <body>
     <div id="main-container">
-        <h1>Russian Sign Language Translator</h1>
+        <h1>Переводчик русского жестового языка </h1>
         <div class="navbar">
-            <a href="#verb">Verb</a>
+            <a href="#verb">Глагол</a>
             <div class="subnav">
-                <a class="subnavbtn">Transport</a>
+                <a class="subnavbtn">Транспорт</a>
                 <div class="subnav-content">
-                    <a href="#bus">Bus</a>
-                    <a href="#train">Train</a>
-                    <a href="#car">Car</a>
-                    <a href="#bicycle">Bicycle</a>
-                    <a href="#boat">Boat</a>
+                    <a href="#bus">Автобус</a>
+                    <a href="#train">Поезд</a>
+                    <a href="#car">Автомобиль</a>
+                    <a href="#bicycle">Велосипед</a>
+                    <a href="#boat">Лодка</a>
                 </div>
             </div>
-            <a href="#days">Days</a>
-            <a href="#months">Months</a>
-            <a href="#counting">Counting</a>
-            <a href="#translator">Translator</a>
+            <a href="#days">Дни</a>
+            <a href="#months">Месяцы</a>
+            <a href="#counting">Подсчет</a>
+            <a href="#translator">Переводчик</a>
         </div>
         <div id="translator">
-            <p>Uniting communication, expanding communication capabilities.</p> 
-            <p>Our goal is to make sign language education accessible by empowering people to communicate effectively and inclusively with people who are deaf and hard of hearing.</p>
+            <p>Объединение коммуникаций, расширение коммуникационных возможностей.</p> 
+            <p>Наша цель — сделать обучение языку жестов доступным, предоставив людям возможность эффективно и инклюзивно общаться с глухими и слабослышащими людьми.</p>
             <div id="video-container">
                 <img id="image-placeholder" src="images/hand2.png" alt="Sign Language" />
                 <video id="video-player" controls>
-                    <source id="video-source" src="Videos" type="video/mp4"> <!-- Default video -->
+                    <source id="video-source" src="Videos" type="video/mp4">
                 </video>
                 <div class="video-list">
-                    <button class="collapsible">Video Titles</button>
+                    <button class="collapsible">Названия видео</button>
 
                     <div class="content">
                     </div>
@@ -47,26 +47,26 @@
     </div>
     <footer>
       <div class="footer-container">
-        <p class="footer-title">Meet Our Team</p>
+        <p class="footer-title">Познакомьтесь с нашей командой</p>
         <div class="team-members">
           <div class="team-member">
             <img class="avatar" src="images/avatar/mehrez.jpg" alt="Team Member 2" />
-            <p class="name">Mohammad Mehrez</p>
+            <p class="name">Мехрез Мохамад</p>
           </div>
           <div class="team-member">
             <img class="avatar" src="images/avatar/makhmud.jpg" alt="Team Member 1" />
-            <p class="name">Ali Makhmud</p>
+            <p class="name">Махмуд Али Айманович</p>
           </div>
           <div class="team-member">
             <img class="avatar" src="images/avatar/doan.jpg" alt="Team Member 3" />
-            <p class="name">Tien Lap Doan</p>
+            <p class="name">Доан Тиен Лап</p>
           </div>
           <div class="team-member">
             <img class="avatar" src="images/avatar/chung.jpg" alt="Team Member 3" />
-            <p class="name">Huynh Diem Chung</p>
+            <p class="name">Чунг Хуинь Дием</p>
           </div>
         </div>
-        <p class="footer-note">© 2024 Sign Language Translator. All rights reserved.</p>
+        <p class="footer-note">Данный проект является частью исследования под названием «Расширение возможностей коммуникации с помощью удобного многоязычного словаря жестового языка», поддержанного <a href="https://mospolytech.ru/">Московским политехническим университетом</a> в рамках гранта В.Е. Фортова.</p>
       </div>
     </footer>
     <canvas id="canvas-red" style="position: fixed; top: 0; left: 0; z-index: -2; width: 100%;;"></canvas>
