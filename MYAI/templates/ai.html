@@ -6,8 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-  <title>Accessible Sign Language Platform</title>
-  <!-- Bootstrap CSS -->
+  <title>Recognition Button</title>
   <link rel="stylesheet" href="ai.css" />
 </head>
 
@@ -23,7 +22,7 @@
         <button id="startRecognitionBtn">Start Recognition</button>
         <div id="statusMessage"></div>
     </div>
-  </main>
+  </main> 
   </div>
   <footer>
     <div class="footer-container">
@@ -52,7 +51,21 @@
   <canvas id="canvas-dark" style="position: fixed; top: 0; left: 0; z-index: -2; width: 100%;;"></canvas>
 
   <script src="../../js/canvas.js"></script>
-  <script src="ai.js"></script>
+  <script>
+    document.getElementById("startRecognitionBtn").addEventListener("click", function() {
+    fetch('/start_recognition', {
+        method: 'POST',
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("statusMessage").innerText = data.message;  
+    })
+    .catch(error => {
+        console.error('Error:', error);  
+        document.getElementById("statusMessage").innerText = 'Error starting recognition.';
+    });
+});
+  </script>
 
 </body>
 </html>
