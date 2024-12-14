@@ -222,11 +222,11 @@ body {
   
   .footer-note {
     font-size: 14px;
-    color: #aaa;
+    color: #fff;
   }
   
   .footer-note a {
-    color: #fff;
+    font-style: italic;
     text-decoration: none;
   }
   
