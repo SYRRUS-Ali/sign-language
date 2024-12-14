@@ -347,17 +347,18 @@ footer {
 }
 
 .footer-note {
-  font-size: 14px;
+  font-size: 1rem;
+  padding: 1rem 3rem;
   color: #aaa;
-  padding-bottom: 0.5rem ;
 }
 
 .footer-note a {
-  color: #fff;
+  color: #00c3ff;
   text-decoration: none;
 }
 
 .footer-note a:hover {
+  color: #2fceff;
   text-decoration: underline;
 }  
 
