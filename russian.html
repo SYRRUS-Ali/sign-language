@@ -1,77 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переводчик русского языка жестов</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bengali.css" />
-    <title>বাংলা সাইন ল্যাঙ্গুয়েজ অনুবাদক</title>
-  </head>
-
-  <body>
+    <link rel="stylesheet" href="css/russian.css">
+</head>
+<body>
     <div id="main-container">
-      <h1>বাংলা সাইন ল্যাঙ্গুয়েজ অনুবাদক</h1>
-      <div class="navbar">
-        <a href="#alphabet">বর্ণমালা</a>
-        <div class="subnav">
-          <a class="subnavbtn">পরিবহন</a>
-          <div class="subnav-content">
-            <a href="#bus">বাস</a>
-            <a href="#train">ট্রেন</a>
-            <a href="#car">গাড়ি</a>
-            <a href="#bicycle">সাইকেল</a>
-            <a href="#boat">নৌকা</a>
-          </div>
+        <h1>Переводчик русского жестового языка </h1>
+        <div class="navbar">
+            <a href="#verb">Глагол</a>
+            <div class="subnav">
+                <a class="subnavbtn">Транспорт</a>
+                <div class="subnav-content">
+                    <a href="#bus">Автобус</a>
+                    <a href="#train">Поезд</a>
+                    <a href="#car">Автомобиль</a>
+                    <a href="#bicycle">Велосипед</a>
+                    <a href="#boat">Лодка</a>
+                </div>
+            </div>
+            <a href="#days">Дни</a>
+            <a href="#months">Месяцы</a>
+            <a href="#counting">Подсчет</a>
+            <a href="#translator">Переводчик</a>
         </div>
-        <a href="#days">দিন</a>
-        <a href="#months">মাস</a>
-        <a href="#counting">গণনা</a>
-        <a href="#translator">অনুবাদক</a>
-      </div>
-      
-      <div id="translator">
-          <p>ইশারা ভাষা হলো একটি নীরব সিম্ফনি, যেখানে প্রতিটি অঙ্গভঙ্গি একটা স্বর, প্রতিটি নড়াচড়া একটা সুর, এমন গল্পের বুনন যা কোন শব্দ ছাড়াই আত্মাকে স্পর্শ করে।.</p>
-          <div id="video-container">
-            <img id="image-placeholder" src="images/handb.jpg" alt="Sign Language" />
-            <video id="video-player" controls>
-                <source id="video-source" src="Videos" type="video/mp4">
-            </video>
-            <div class="video-list">
-                <button class="collapsible">ভিডিও শিরোনাম</button>
-                <div class="content">
+        <div id="translator">
+            <p>Объединение коммуникаций, расширение коммуникационных возможностей.</p> 
+            <p>Наша цель — сделать обучение языку жестов доступным, предоставив людям возможность эффективно и инклюзивно общаться с глухими и слабослышащими людьми.</p>
+            <div id="video-container">
+                <img id="image-placeholder" src="images/hand2.png" alt="Sign Language" />
+                <video id="video-player" controls>
+                    <source id="video-source" src="Videos" type="video/mp4">
+                </video>
+                <div class="video-list">
+                    <button class="collapsible">Названия видео</button>
+
+                    <div class="content">
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-</div>
-<footer>
-  <div class="footer-container">
-    <p class="footer-title">আমাদের দলের সাথে দেখা করুন</p>
-    <div class="team-members">
-      <div class="team-member">
-        <img class="avatar" src="images/avatar/mehrez.jpg" alt="Team Member 2" />
-        <p class="name">মোহাম্মদ মেহরেজ</p>
+    <footer>
+      <div class="footer-container">
+        <p class="footer-title">Познакомьтесь с нашей командой</p>
+        <div class="team-members">
+          <div class="team-member">
+            <img class="avatar" src="images/avatar/mehrez.jpg" alt="Team Member 2" />
+            <p class="name">Мехрез Мохамад</p>
+          </div>
+          <div class="team-member">
+            <img class="avatar" src="images/avatar/makhmud.jpg" alt="Team Member 1" />
+            <p class="name">Махмуд Али Айманович</p>
+          </div>
+          <div class="team-member">
+            <img class="avatar" src="images/avatar/doan.jpg" alt="Team Member 3" />
+            <p class="name">Доан Тиен Лап</p>
+          </div>
+          <div class="team-member">
+            <img class="avatar" src="images/avatar/chung.jpg" alt="Team Member 3" />
+            <p class="name">Чунг Хуинь Дием</p>
+          </div>
+        </div>
+        <p class="footer-note">Данный проект является частью исследования под названием «Расширение возможностей коммуникации с помощью удобного многоязычного словаря жестового языка», поддержанного <a href="https://mospolytech.ru/">Московским политехническим университетом</a> в рамках гранта В.Е. Фортова.</p>
       </div>
-      <div class="team-member">
-        <img class="avatar" src="images/avatar/makhmud.jpg" alt="Team Member 1" />
-        <p class="name">আলী মাখমুদ</p>
-      </div>
-      <div class="team-member">
-        <img class="avatar" src="images/avatar/doan.jpg" alt="Team Member 3" />
-        <p class="name">তিয়েন ল্যাপ ডোয়ান</p>
-      </div>
-      <div class="team-member">
-        <img class="avatar" src="images/avatar/chung.jpg" alt="Team Member 3" />
-        <p class="name">হুইন দিম চুং</p>
-      </div>
-    </div>
-    <p class="footer-note">এই প্রকল্পটি ভি.ই. ফোরটভের অনুদানের অধীনে <a href="https://mospolytech.ru">মস্কো পলিটেকনিক বিশ্ববিদ্যালয় </a> দ্বারা সমর্থিত 'ব্যবহারকারী-বান্ধব বহুভাষিক সাংকেতিক ভাষা অভিধানের মাধ্যমে যোগাযোগের ক্ষমতায়ন' শীর্ষক গবেষণার একটি অংশ।</p>
-  </div>
-</footer>
-<canvas id="canvas-green" style="position: fixed; top: 0; left: 0; z-index: -2; width: 100%;;"></canvas>
-
+    </footer>
+    <canvas id="canvas-red" style="position: fixed; top: 0; left: 0; z-index: -2; width: 100%;;"></canvas>
 
     <script src="js/canvas.js"></script>
-    <script src="js/bengali.js"></script>
-  </body>
+    <script src="js/russian.js"></script>
+
+</body>
 </html>
