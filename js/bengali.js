@@ -77,10 +77,10 @@ document.addEventListener("DOMContentLoaded", () => {
     collapsibleButton.addEventListener("click", () => {
         if (videoListContainer.style.display === "none") {
             videoListContainer.style.display = "block";
-            collapsibleButton.textContent = "Hide Video Titles";
+            collapsibleButton.textContent = "ভিডিও শিরোনাম লুকান";
         } else {
             videoListContainer.style.display = "none";
-            collapsibleButton.textContent = "Show Video Titles";
+            collapsibleButton.textContent = "ভিডিও শিরোনাম দেখান";
         }
 
         if (videoListContainer.style.display === "block") {
