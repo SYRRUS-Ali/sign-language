@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>Accessible Sign Language Platform</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="ai.css" />
+</head>
+
+<body>
+  <main>
+    <div id="recognition" class="section">
+      <nav>
+        <a href="../../american.html">American Sign Language</a>
+        <a href="../../russian.html">Русский жестовый язык</a>
+        <a href="../../bengali.html">বাংলা সাংকেতিক ভাষা</a>
+        <a href="../../index.html">Translator</a>
+      </nav>
+        <button id="startRecognitionBtn">Start Recognition</button>
+        <div id="statusMessage"></div>
+    </div>
+  </main>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <p class="footer-title">Meet Our Team</p>
+      <div class="team-members">
+        <div class="team-member">
+          <img class="avatar" src="../../images/avatar/mehrez.jpg" alt="Team Member 2" />
+          <p class="name">Mohammad Mehrez</p>
+        </div>
+        <div class="team-member">
+          <img class="avatar" src="../../images/avatar/makhmud.jpg" alt="Team Member 1" />
+          <p class="name">Ali Makhmud</p>
+        </div>
+        <div class="team-member">
+          <img class="avatar" src="../../images/avatar/doan.jpg" alt="Team Member 3" />
+          <p class="name">Tien Lap Doan</p>
+        </div>
+        <div class="team-member">
+          <img class="avatar" src="../../images/avatar/chung.jpg" alt="Team Member 3" />
+          <p class="name">Huynh Diem Chung</p>
+        </div>
+      </div>
+      <p class="footer-note">This project is a part of research titled 'Empowering Communication with a User-Friendly Multilingual Sign Language Dictionary' supported by <a href="https://mospolytech.ru/">Moscow Polytechnic University</a> under V.E. Fortov’s Grant</p>
+    </div>
+  </footer>
+  <canvas id="canvas-dark" style="position: fixed; top: 0; left: 0; z-index: -2; width: 100%;;"></canvas>
+
+  <script src="../../js/canvas.js"></script>
+  <script src="ai.js"></script>
+
+</body>
+</html>
