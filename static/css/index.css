@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #f4f5f5;
+  padding-top: 35px;
+}
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+header {
+  background: #3b6ba5 !important;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white !important;
+}
+/* Buttons and Links */
+.btn-link,
+.btn-outline-secondary,
+.btn-outline-primary,
+.btn-primary,
+.btn-outline-success {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 20px;
+}
+.btn-primary,
+.btn-outline-success,
+.btn-success {
+  padding: 10px 20px;
+  background-color: #027495;
+  border: none !important;
+}
+.btn-outline-success:hover,
+.btn-success:hover {
+  background-color: #3b6ba5;
+}
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #051f34 !important;
+  color: white !important;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: #bad6db!important;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px auto; 
+}
+#about h2,
+#recognition h2 {
+  color: #027495 !important;
+}
+.video-card {
+  transition: transform 0.3s ease, background-color 0.3s ease-in-out;
+  overflow: hidden;
+  text-align: center;
+  color: #051f34;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px; 
+}
+.video-card:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+.section,
+.bg-light {
+  padding: 20px;
+  background-color: white; 
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
+  margin-top: 40px;
+}
+p {
+  text-align: center;
+  margin-bottom: 2px;
+  font-size: 1.2em;
+}
+#about p {
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+#recognition button {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #01a9c1;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#recognition button:hover {
+  background-color: #3b6ba5;
+}
+footer {
+  background-color: #027495;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+/* Fixed Elements */
+.fixed-top {
+  background-color: #3b6ba5;
+}
+.fixed-top,
+.fixed-search {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.fixed-search {
+  top: 40px;
+  text-align: right;
+}
+.fixed-search input[type="text"] {
+  background-color: #ffffff;
+  color: #3b6ba5;
+  border: 1px solid #01a9c1;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 14px;
+  outline: none;
+}
+.fixed-search input[type="text"]::placeholder {
+  color: #3b6ba5;
+  opacity: 0.7;
+}
+.fixed-search button,
+#text-size-controls .btn {
+  background-color: #01a9c1;
+  color: white;
+  border: none !important;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.fixed-top button:hover{
+  color: #bad6db!important;
+}
+.fixed-search button:hover {
+  background-color: #72a5d3;
+}
+#team,
+#bengali,
+#russian,
+#american,
+#about,
+#recognition {
+  scroll-margin-top: 40px;
+}
+/* Language Dropdown */
+.offcanvas-header {
+  background-color: #027495;
+}
+.offcanvas-body {
+  background-color: #f4f5f5;
+}
+.offcanvas-body .list-group-item:hover {
+  background-color: #f4f5f5;
+  color: #027495!important;
+}
+/* Search Container */
+.search-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.offcanvas-header {
+  background-color: #027495 !important;
+  color: white;
+}
+/* Modal Header Style for Login and Register */
+.modal-header {
+  background-color: #027495 !important;
+  color: white;
+}
+.search-container input,
+.search-container button {
+  padding: 0.5em;
+}
+.search-container input {
+  font-size: 14px;
+  margin-bottom: 0.5em;
+  width: auto;
+}
+#text-size-controls {
+  position: fixed;
+  top: 90%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+#text-size-controls .btn {
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+}
+.card img {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#loginFrom{
+  display: "none";
+}

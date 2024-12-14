@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>Accessible Sign Language Platform</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="static/css/index.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="d-flex flex-column align-items-center p-3">
+    <div class="d-flex w-100 fixed-top justify-content-between">
+      <!-- Left Navigation Buttons -->
+      <div class="d-flex">
+        <a id="aboutButton" class="btn btn-link text-white" href="#about">About</a>
+        <a id="teamButton" class="btn btn-link text-white" href="#team">Our Team</a>
+      </div>
+
+      <!-- Right Navigation Buttons -->
+      <div class="d-flex">
+        <a id="TranslatorButton" class="btn btn-link text-white" href="">Translator</a>
+        <button id="loginBtn" class="btn btn-link text-white" data-bs-toggle="modal" data-bs-target="#authModal">
+          Login
+        </button>
+        <button id="languageBtn" class="btn btn-link text-white" data-bs-toggle="offcanvas"
+          data-bs-target="#languageMenu">
+          Language
+        </button>
+      </div>
+    </div>
+    <div class="fixed-search">
+      <input type="text" id="search-input" placeholder="Enter search term" />
+      <button id="search-button">Search</button>
+    </div>
+    <!-- Main Heading -->
+    <h1 class="text-center mt-3">
+      Sign Language Learning Platform
+    </h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container py-4">
+    <canvas id="canvas"></canvas>
+    <!-- Bengali Section -->
+    <div id="bengali">
+      <h2 class="text-center text-dark">বাংলা সাংকেতিক ভাষা (Bengali)</h2>
+      <div class="row g-4"></div> <!-- Здесь будут добавляться видео -->
+    </div>
+
+    <!-- Russian Section -->
+    <div id="russian">
+      <h2 class="text-center text-dark">Русский жестовый язык (Russian)</h2>
+      <div class="row g-4"></div> <!-- Здесь будут добавляться видео -->
+    </div>
+
+    <!-- American Section -->
+    <div id="american">
+      <h2 class="text-center text-dark">American Sign Language</h2>
+      <div class="row g-4"></div> <!-- Здесь будут добавляться видео -->
+    </div>
+
+
+
+    <!-- Forms -->
+    <!-- Modal for Registration and Login -->
+    <div id="authModal" class="modal fade" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="modalTitle">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Registration Form -->
+            <form id="registerForm">
+              <input type="text" class="form-control my-2" placeholder="First Name" required />
+              <input type="text" class="form-control my-2" placeholder="Last Name" required />
+              <input type="email" class="form-control my-2" placeholder="Email" required />
+              <input type="number" class="form-control my-2" placeholder="Age" required min="1" />
+              <select class="form-control my-2" required>
+                <option value="">Select Education Qualification</option>
+                <option value="High School">High School</option>
+                <option value="Bachelor's">Bachelor's</option>
+                <option value="Master's">Master's</option>
+              </select>
+              <input type="password" class="form-control my-2" placeholder="Password" required />
+              <input type="password" class="form-control my-2" placeholder="Repeat Password" required />
+              <button type="submit" class="btn btn-success w-100">
+                Register
+              </button>
+            </form>
+
+            <!-- Login Form -->
+            <form id="loginForm" >
+              <input type="email" class="form-control my-2" placeholder="Email" required />
+              <input type="password" class="form-control my-2" placeholder="Password" required />
+              <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+
+            <!-- Toggle between Register and Login -->
+            <div class="text-center mt-3">
+              <button id="toggleAuth" class="btn btn-link">
+                Don't have an account? Register
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Section -->
+    <section id="team">
+      <h2 class="text-center text-dark my-5">Meet Our Team</h2>
+      <div class="row g-4">
+        <!-- Team Members -->
+      </div>
+    </section>
+
+    <!-- About -->
+    <div id="about" class="section">
+      <h2 class="text-center my-5">About us</h2>
+      <p>
+        The research titled "Empowering Communication with a User-Friendly Multilingual Sign Language Dictionary" aims to develop a user-friendly multilingual sign language dictionary that will empower hearing-impaired communities worldwide. It involves the creation of a comprehensive dataset featuring both static and dynamic samples of various sign languages from around the globe. 
+        The project is scheduled for completion within two years, relying on the expertise of sign language professionals, enthusiastic students, and a strong commitment to teamwork.
+      </p>
+    </div>
+
+    <!-- Sign Language Recognition Section -->
+    <div id="recognition" class="section">
+      <h2 class="text-center my-5">Sign Language Recognition</h2>
+      <p>
+        Our platform uses AI-powered technology to recognize and interpret sign language gestures in real-time.
+      </p>
+      <p>
+        This feature bridges the communication gap and promotes inclusivity.
+      </p>
+      <div class="my-5">
+        <button id="startRecognitionBtn">Start Recognition</button>
+        <div id="statusMessage"></div>
+      </div>
+
+    </div>
+    </br>
+
+    <!-- Offcanvas for Language Menu -->
+    <div class="offcanvas offcanvas-end" id="languageMenu">
+      <div class="offcanvas-header bg-secondary text-white">
+        <h5>Languages</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas">hhhhh</button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group">
+          <a href="#bengali" class="list-group-item">বাংলা (Bengali)</a>
+          <a href="#russian" class="list-group-item">Русский (Russian)</a>
+          <a href="#american" class="list-group-item">American</a>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <div id="text-size-controls" class="d-flex flex-column fixed-start align-items-center">
+    <button id="decrease-text" class="btn btn-primary my-2">-</button>
+    <button id="increase-text" class="btn btn-primary my-2">+</button>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Accessible Sign Language Platform</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="static/scripts/size.js"></script>
+  <script src="static/scripts/index.js"></script>
+  <script src="static/scripts/search.js"></script>
+  <script src="static/scripts/video.js"></script>
+  <script src="static/scripts/script.js"></script>
+  <script src="static/scripts/animation.js"></script>
+
+  <script>
+    document.getElementById("startRecognitionBtn").addEventListener("click", function() {
+        fetch('/start_recognition', {
+            method: 'POST',
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("statusMessage").innerText = data.message;  
+        })
+        .catch(error => {
+            console.error('Error:', error);  
+            document.getElementById("statusMessage").innerText = 'Error starting recognition.';
+        });
+    });
+</script>
+</body>
+</html>
