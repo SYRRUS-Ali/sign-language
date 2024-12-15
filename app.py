@@ -2,6 +2,8 @@ from flask import Flask, jsonify, render_template
 import cv2
 import mediapipe as mp
 import threading
+import subprocess
+
 
 # Import the required components
 from feature_extraction import *
@@ -88,7 +90,7 @@ def index():
 
 @app.route('/start_recognition', methods=['POST'])
 def start_recognition_route():
-    threading.Thread(target=start_recognition).start()
+    subprocess.Popen(["python", "main.py"])
     return jsonify({"message": "Identification has begun"}), 200
 
 
